@@ -1,0 +1,58 @@
+body {
+	/*font-family: Verdana, Arial, Helvetica, sans-serif; */
+	text-align: center; 
+	margin: 1em 0 0 0; 
+	vertical-align: middle;
+}
+
+div#header {
+	position: relative;
+	width: 1200px;
+	height: 100px;
+	margin: 0 auto;
+}
+
+div#body#dialog {
+	position:relative;
+	width: 1200px; 
+	margin: 0 auto;
+}
+	
+div#foot {
+	position: relative;
+	width: 1200px;
+	margin: 40px auto;
+}
+
+div#default {
+	position: relative;
+	width: 1200px;
+	font-size: 0.9em;
+	margin: 40px auto;
+}
+
+span#defaultSpan {
+	color: blue;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+span#defaultSpan:hover {
+	color: red;
+}
+
+
+span#lang {
+	color: blue;
+	text-decoration: underline;
+	cursor: pointer;
+	margin-left: 50px;
+}
+
+span#lang:hover {
+	color: red;
+}
+
+h1 {text-align: center;}
+
+button {width:200px; margin: 10px 5px;}

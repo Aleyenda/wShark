@@ -1,0 +1,114 @@
+body { font: 12px Verdana;}
+div.info { height: 37px; width: 100px; float: left; margin-left: 15px;}
+span.info {  font-size: 12px; margin: 3px 0px 0px 5px; float:left; width: 100px; }
+
+/**************** PACKETS TABLE (Summary & Details) ****************/
+
+.fht_table_body {
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0;
+    overflow-y:auto;
+    overflow-x:auto;
+    border-top: 1px solid #000;
+    background-color: #fff;
+}
+
+.fht_table_body table thead tr th, .fht_table_body table tbody tr td, .fht_fixed_header table thead tr th, table thead tr th, table tbody tr td {
+    padding: 2px 5px;
+}
+
+.fht_table_body table thead tr th, .fht_fixed_header table thead tr th, table thead tr th {
+    padding: 5px;
+}
+.fht_fixed_header th { border-right: 2px inset #ddd }
+
+.empty-cell {
+    overflow:hidden;
+}
+
+table { font-family: monospace; color: #000; border-top:2px solid black; border-collapse: collapse; border-spacing: 10px !important; }
+th  { font-family:Helvetica; text-align:left !important; padding: 5px; font-weight: bold;  vertical-align:bottom;}
+th:last-child { border-right: none; }
+table#summary td:last-child { white-space: nowrap; overflow: hidden; position: absolute; }
+#summary { width: 100%; }
+#summary tbody td { cursor: pointer; font-size: 14px; overflow: auto !important }
+
+tr.picked { background-color: rgb(167, 203, 253); border: 1px solid #3691FB; }
+
+#wholeSummary { width: 100%; height: 50%; overflow-x: auto; overflow-y: auto; }
+
+.pane { overflow-y: auto; font-family: monospace; min-width: 1000px;}
+
+#filter-field { font-size: 1.2em; position: relative; top: 1px}
+
+#header { position: absolute; top: 0px; height: 70px; left: 0; right: 0; border-bottom: 1px solid #aaa; font-size: 0.9em; min-width: 1000px;}
+
+#wrapper { position: absolute; top: 43px; bottom: 0; left: 0; right:0; overflow: hidden }
+
+#detail-div { 
+    height: 25%; /* +13% - 2% quitado del ascii-div */ 
+    border-top: 1px solid #666; 
+    background-color: #fff; 
+    cursor: default;
+}
+
+#ascii-div { position:relative; height: 20%; overflow: hidden;}
+#ascii-div #tab-0, #ascii-div #tab-1 { 
+    position: absolute; 
+    top: 21px; 
+    right:0; 
+    left: 0; 
+    bottom: 0; 
+    padding-left: 10px; 
+    overflow-y: auto; 
+    background-color:#fff !important; 
+    border-top: 1px solid #666;
+    margin-bottom: 7px;
+}
+
+pre { margin:2px}
+
+/* Drop-down menu indentation */
+div.protocol { padding-left: 25px !important; }
+div.protocol div { padding-left: 25px }
+div.protocol * div { padding-left: 25px }
+div.protocol > div { display: none; }
+div.expanded > div { display: block !important;}
+div.parent > div { display: none; }
+
+#detail-div div:first-child { margin-top: 2px; }
+#detail-div span.protoLabel { background-color: #e5e5e5; display:block; margin-bottom: 2px}
+#detail-div span.fieldLabel { display:block; }
+/*div.parent { background: url(/images/shark-right.gif) 2px 0 no-repeat}*/
+#detail-div { border-top: 2px solid black; margin: 10px; font-size: 14px }
+
+/* Selected packets */
+tr.picked td, div.picked > span.fieldLabel, div.picked > span.protoLabel { 
+   background: #a7cbfd !important;
+   color: #000;
+}
+
+span.ascii-selection { background-color: #b6d6fe; color: #000 }
+
+
+/***************  BUTTONS *************/
+
+.ui-button { display: inline-block; position: relative; padding: 0; margin-right: .05em; text-decoration: none !important; cursor: pointer; text-align: center; zoom: 1; overflow: visible;  }
+.ui-button .ui-button-text { display: block; line-height: 1.4;  }
+.ui-button-text-icon .ui-button-text { padding: .4em 1em .4em 2.1em; }
+
+
+.Capturing { margin-left: 3px;  padding: 1px; font-size: 100%; width: 100%; color: Black; font-weight: bold; background-color : GreenYellow; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; border: 1px solid #cbc7bd; }
+.stopped { margin-left: 3px;  padding: 1px; font-size: 100%; width: 100%; color: White; font-weight: bold;  background-color : Tomato; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; border: 1px solid #cbc7bd; }
+.File { margin-left: 3px;  padding: 1px; font-size: 100%; width: 100%; color: Black; font-weight: bold; background-color : Skyblue; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; border: 1px solid #cbc7bd; }
+
+
+#stopCaptureTitle { font-size: 12px; margin: 3px 0px 0px 10px; float:left; width: 100px; }
+.captureButtonPlay { float:left; height: 21px; width: 30px; margin: 0px 0px 0px 3px; cursor:pointer; } 
+.captureButtonStop { height: 21px; width: 30px; margin: 0px 0px 0px 3px; cursor:pointer;}
+
+.infoNet { margin-left: 3px;  padding: 1px; font-size: 100%; width: 100%; background-color:  ; color: Black ; font-weight: bold; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; border: 1px solid #cbc7bd; }
+.infoFilter { margin-left: 3px;  padding: 1px; font-size: 100%; width: 100%; background-color:  ; color: Black ; font-weight: bold; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; border: 1px solid #cbc7bd; }
+.infoLang { margin-left: 3px;  padding: 1px; font-size: 100%; width: 100%; background-color:  ; color: Black ; font-weight: bold; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; border: 1px solid #cbc7bd; }

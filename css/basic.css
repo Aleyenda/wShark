@@ -1,0 +1,27 @@
+/*
+ * SimpleModal Basic Modal Dialog
+ * http://www.ericmmartin.com/projects/simplemodal/
+ * http://code.google.com/p/simplemodal/
+ *
+ * Copyright (c) 2010 Eric Martin - http://ericmmartin.com
+ *
+ * Licensed under the MIT license:
+ *   http://www.opensource.org/licenses/mit-license.php
+ *
+ * Revision: $Id: basic.css 257 2010-07-27 23:06:56Z emartin24 $
+ */
+
+#basic-modal-content {display:none;}
+
+/* Overlay */
+#simplemodal-overlay {background-color:#000; cursor:wait;}
+
+/* Container */
+#simplemodal-container {color:#000; background-color:#bbb; border:1px solid #555; padding:12px; }}
+#simplemodal-container .simplemodal-data {padding:8px;}
+#simplemodal-container code {background:#fff; border-left:3px solid #65B43D; color:#141414; display:block; font-size:12px; margin-bottom:12px; padding:4px 6px 6px;}
+#simplemodal-container a {color:#ddd;}
+#simplemodal-container a.modalCloseImg {background:url(../images/x.png) no-repeat; width:25px; height:29px; display:inline; z-index:3200; position:absolute; top:-15px; right:-16px; cursor:pointer;}
+#simplemodal-container h3 {color:#000 ; font-size:22px; line-height:26px; font-weight:bold; margin:0 0 2px 0;}
+#simplemodal-container button {color: #333; font-size:14px; width:200px; margin: 10px 5px}
+#simplemodal-container .graph {margin-right: 15px; margin-bottom: 15px; height: 500px; width: 1000px;  }
